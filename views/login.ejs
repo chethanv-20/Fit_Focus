@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .main-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 40px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 2px 2px 2px rgb(0, 0, 0);
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .main-div input {
+            width: 100%;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .main-div button {
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <%- include('nav') %>
+    <div class="main-div">
+        <h2>Login to continue</h2>
+        <form action="/login" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="password" name="password" placeholder="Enter password" required>
+            <button class="btn btn-success">Login</button>
+        </form>
+    </div>
+</body>
+</html>

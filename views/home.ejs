@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit - Home</title>
+    <style>
+        .loading-page {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .loading-page img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .loading-page h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('nav') %>
+    <div class="loading-page">
+        <img src="https://images.pexels.com/photos/669578/pexels-photo-669578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <h1>Your Fitness journey starts here</h1>
+    </div>
+
+    <%- include('footer') %>
+</body>
+</html>

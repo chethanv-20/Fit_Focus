@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid white;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-elements{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    transition: 1s ease-in;
+}
+
+.logo{
+    height: 50px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav-elements a:hover{
+    color: red;
+    text-decoration: none;
+}
+#inside-text {
+    color: red;
+    font-weight: bolder;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img class="logo" src="https://t3.ftcdn.net/jpg/02/43/26/66/240_F_243266606_qrREg3SESvf13xf7i7gBpG2aNsqFC1it.jpg" alt="">
+            <h1>Fit<span id="inside-text"> Focus</span></h1>
+        </div>
+        <div class="nav-elements">
+            <a href="/"><h6>Home</h6></a> 
+            <a href="/bot"><h6>Fit Bot</h6></a>  
+            <a href="/cal_cal"><h6>Calorie calculator</h6></a>
+            <a href="/articles"><h6>Articles</h6></a>
+            <a href="/profile"><h6>Profile <i class="fa-solid fa-user"></i></h6>  </a>
+            
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b58e40ca7c.js" crossorigin="anonymous"></script>
+</body>
+</html>

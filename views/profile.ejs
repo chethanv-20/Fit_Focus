@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .profile-container {
+            margin: 40px auto;
+            max-width: 900px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 2px black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            height: 100px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    
+        .gallery img{
+            height: 150px;
+            width: 40%;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgb(255, 0, 0);
+        }
+        .text-center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('nav') %>
+
+    <div class="container profile-container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h4>PROFILE</h4>
+                <img src="https://t4.ftcdn.net/jpg/03/81/67/39/360_F_381673993_DAYrWdGvjEQBry0Nt7mtdK02RLKTh4Nk.jpg" alt="Profile Picture" class="profile-pic mb-4 ">
+                <h3><%= user.name %></h3>
+                <p><strong>Age:</strong> <%= user.age %></p>
+                <p><strong>Weight:</strong> <%= user.weight %> kg</p>
+                <a href="/logout" class="btn btn-danger">Logout</a>
+            </div>
+            <div class="col-md-8 gallery">
+                <h4>GYM gallery</h4>
+                <img src="https://t4.ftcdn.net/jpg/02/86/09/83/360_F_286098390_D2J4jLbOkCzikuSXxQBh26IxhR7t4i28.webp" alt="">
+                <img src="https://t3.ftcdn.net/jpg/03/20/45/94/240_F_320459487_SAvrvfR4NN4CkFQccj49rBfmiLoYebuw.jpg" alt="">
+                <img src="https://t4.ftcdn.net/jpg/02/28/83/73/240_F_228837309_OmSaSR7Tk7farjC5q8qvz48004AGRRAf.jpg" alt="">
+                <img src="https://t3.ftcdn.net/jpg/01/66/41/58/240_F_166415877_jVfDZnlAnl4QthrHbjNJszbjd8aUQay0.jpg" alt="">
+                <img src="https://t4.ftcdn.net/jpg/00/99/82/15/240_F_99821575_nVEHTBXzUnTcLIKN6yOymAWAnFwEybGb.jpg" alt="">
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
