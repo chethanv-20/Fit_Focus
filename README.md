@@ -17,12 +17,11 @@ A Fitness focused web application that provides wide range of features
 
 ### Calorie Calculator 
 <img src="https://github.com/user-attachments/assets/4411abb8-dc13-4370-8ce1-6e09794aafbd" width="300" height="200">
-<img src="https://github.com/user-attachments/assets/07d40ffb-5022-403b-848e-4880573550ca" width="600" height="400">
+<img src="https://github.com/user-attachments/assets/afa32684-1214-4d70-bab6-d9766d4a261a" width="600" height="400">
 
 ### Articles
 <img src="https://github.com/user-attachments/assets/026759ed-5700-44e1-8cee-fbf4d9f8a41a" width="600" height="400">
 
 ### Profile
 <img src="https://github.com/user-attachments/assets/79ae1f22-9cd9-443d-9fe0-68699c801e13" width="600" height="400">
-
 
