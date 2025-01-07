@@ -25,3 +25,4 @@ A Fitness focused web application that provides wide range of features
 ### Profile
 <img src="https://github.com/user-attachments/assets/79ae1f22-9cd9-443d-9fe0-68699c801e13" width="600" height="400">
 
+"# Fitness_Application" 
